@@ -2,16 +2,28 @@
     "scopeName": "text.htmlt",
     "patterns": [
         {
-            "include": "#comment"
+            "include": "#comments"
         }
     ],
     "repository": {
-        "comment": {
+        "comments": {
             "patterns": [
                 {
                     "match": "#.*$"
                     "name": "comment.line.number-sign.htmlt",
                 }
+            ]
+        },
+        "htmlTags": {
+            "patterns": [
+                { 
+                    "match": "(</?)([a-zA-Z0-9]+)(>)"
+                    "captures": {
+                        "1": { "name": "punctuation.definition.tag.begin.html" },
+                        "2": { "name": "entity.name.tag.html" },
+                        "3": { "name": "punctuation.definition.tag.end.html" }
+                    }
+                },
             ]
         }
     },
