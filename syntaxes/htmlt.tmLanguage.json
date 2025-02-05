@@ -2,10 +2,18 @@
     "scopeName": "text.htmlt",
     "patterns": [
         {
-                "match": "#.*$",
-                "name": "comment.line.number-sign.htmlt"
+            "include": "#comment"
         }
     ],
-    "repository": {},
+    "repository": {
+        "comment": {
+            "patterns": [
+                {
+                    "match": "#.*$"
+                    "name": "comment.line.number-sign.htmlt",
+                }
+            ]
+        }
+    },
     "fileTypes": ["htmlt"]
 }
