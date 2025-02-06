@@ -27,5 +27,6 @@
     "repository": {
         "type": "git",
         "url": "https://github.com/Firecrafter28/HTMLT-Syntax.git"
-    }
+    },
+    "icon": "Icon.png"
 }
